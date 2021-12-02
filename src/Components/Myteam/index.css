@@ -1,0 +1,152 @@
+  .container {
+    margin: 90px 5px;
+    display: grid;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profiles {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px;
+  }
+
+  
+  .profile {
+    display: grid;
+    flex-basis: 260px;
+    margin: 30px 60px;
+    padding: 30px;
+  }
+
+  .profile:hover{
+    box-shadow:  5px 10px 20px 1px rgba(0,0,0,0.6)!important;
+  } 
+ 
+  
+  .profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .profile:hover .profile-img {
+    filter: grayscale(0);
+  }
+  
+  .user-name {
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  
+  .profile h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+  }
+  
+  .paragraph {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  @media only screen and (max-width: 1150px) {
+    .profiles {
+      flex-direction: column;
+    }
+  
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .profile p {
+      text-align: center;
+      margin: 20px 60px 80px 60px;
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .heading {
+      font-size: 40px;
+      text-align: center;
+    }
+
+  
+    .profiles {
+      margin: 10px 0;
+      width: auto;
+    }
+  
+    .profile p {
+      margin: 20px 10px 20px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .user-name{
+      font-size: 28px;
+    }
+
+  .heading{
+    width: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  }
+  @media only screen and (max-width: 578px){
+    .profiles{
+      width: 260px;
+    }
+  }
+
+  @media only screen and (max-width: 581px){
+    .container{
+      width: auto;
+    }
+
+    .profiles{
+      width: 300px;
+      margin-right: 5rem;
+    }
+    .profile{
+      width: auto;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+    .profiles{
+      width: 360px;
+      margin-left: 1rem;
+    }
+
+    .profile p{
+      font-size: 12px; 
+    }
+
+    .profile .profile-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    }
+
+    .heading{
+      font-size: 30px;
+    }
+  }
