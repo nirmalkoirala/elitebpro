@@ -44,7 +44,7 @@ const toggleHome = () => {
                              aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
-                            <SocialIconLink href="https://www.instagram.com/elshaddaihc/" target="_blank"
+                            <SocialIconLink href="https://www.instagram.com/elitebusinesspro/" target="_blank"
                              aria-label="Instagram">
                                 <FaInstagram />
                             </SocialIconLink>

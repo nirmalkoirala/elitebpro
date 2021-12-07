@@ -24,7 +24,8 @@ const Topbar = () => {
                              aria-label="Facebook">
                                 <FaFacebook />
                             </TopLinks>
-                            <TopLinks>
+                            <TopLinks href="https://www.instagram.com/elitebusinesspro/" target="_blank"
+                             aria-label="Facebook">
                                 <FaInstagram />
                             </TopLinks>
                             <TopLinks href="https://www.youtube.com/channel/UCD_FYyjBkQVLXiJG5eDtEsg" target="_blank" aria-label="Youtube">

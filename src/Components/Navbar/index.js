@@ -1,7 +1,7 @@
 import React, {useState, useEffect, Link} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
-import { animateScroll as scroll } from 'react-scroll';
+// import { animateScroll as scroll } from 'react-scroll';
 import { useNavigate } from 'react-router';
 
 
