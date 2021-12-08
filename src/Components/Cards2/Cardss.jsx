@@ -7,7 +7,6 @@ import img1 from "../../images/Nirmal.jpeg";
 import img5 from "../../images/Chintan.jpeg"
 import img6 from "../../images/Rajan.jpeg"
 import img7 from "../../images/Sagar.jpeg"
-import img8 from "../../images/Chintan.jpeg"
 import img9 from "../../images/Pema.jpeg"
 import img10 from "../../images/Supreeya.jpeg"
 

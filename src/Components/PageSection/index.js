@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
     MortContainer, MortWrapper, 
     Heading, Subtitle, Img, 
@@ -7,11 +7,11 @@ import {
 
 const PageSection = ({lightBg, id, lightText, headline,
 darkText, description, img, alt,}) => {
-    const [hover, setHover] = useState(false);
+    // const [hover, setHover] = useState(false);
 
-    const onHover = () => {
-        setHover(!hover);
-    }
+    // const onHover = () => {
+    //     setHover(!hover);
+    // }
     return (
         <>
             <MortContainer lightBg={lightBg} id={id}>

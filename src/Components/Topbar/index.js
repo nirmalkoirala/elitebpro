@@ -1,6 +1,6 @@
 import React from 'react'
 import Background from "../../images/elitelogo1.jpeg"
-import {FaFacebook, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
+import {FaFacebook, FaInstagram, FaYoutube} from 'react-icons/fa'
 import { 
     Top, TopContainer, TopLogo, TopMenu, TopItem, TopLinks,
  } from './TopbarElements'
@@ -31,9 +31,6 @@ const Topbar = () => {
                             <TopLinks href="https://www.youtube.com/channel/UCD_FYyjBkQVLXiJG5eDtEsg" target="_blank" aria-label="Youtube">
                                 <FaYoutube />                
                             </TopLinks>
-                            {/* <TopLinks>
-                                <FaTwitter />                
-                            </TopLinks> */}
                         </TopItem>
                     </TopMenu>
                 </TopContainer>

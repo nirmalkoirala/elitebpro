@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll';
+
 
 export const Top = styled.nav`
     position: relative;
@@ -67,21 +66,7 @@ export const TopMenu = styled.div`
     padding-left: 30px;
     padding-right: 50px;
     margin-right: 100px;
-
-    /* @media screen and (max-width: 968px) {
-    align-items: center;
-    margin-right: 5rem;
-    }
-
-    @media screen and (max-width: 760px) {
-    align-items: center;
-    margin-right: 5rem;
-    }
-
-    @media screen and (max-width: 460px) {
-        display: none;
-    } */
-`;
+`
 
 export const TopItem = styled.div`
     display: flex;

@@ -1,7 +1,7 @@
-import React, {useState, useEffect, Link} from 'react'
+import React, {useState, useEffect } from 'react'
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib';
-// import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 import { useNavigate } from 'react-router';
 
 
@@ -9,7 +9,7 @@ import
 {Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn
 } from './NavbarElements';
 
-const Navbar = ({toggle, props}) => {
+const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -20,35 +20,30 @@ const Navbar = ({toggle, props}) => {
         }
     }
 
-    let navigate=useNavigate();
-    function checkRoute() {
-            navigate('ourteam')
-        }
-
-
-
     useEffect(() => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
-    // const toggleHome = () => {
-    //     scroll.scrollToTop();
-    // };
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
+    let navigate=useNavigate();
+    function checkRoute() {
+            navigate('ourteam')
+        }
 
     return (
         <>
         <IconContext.Provider value={{ color: '#fff'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    {/* <NavLogo to='/' onClick={toggleHome}>
-                    Car Detail
-                    </NavLogo> */}
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='home' 
+                            <NavLinks to='home' onClick={toggleHome}
                             smooth={true}
                             duration={450}
                             spy={true}
